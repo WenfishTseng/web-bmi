@@ -1,0 +1,19 @@
+$desktop-media: 1024px;
+$pad-media: 767px;
+$phone-media: 568px;
+$phone480-media: 480px;
+$phone375-media: 375px;
+
+//  平板尺寸
+@mixin pad() {
+  @media (max-width: $pad-media) {
+    @content;
+  }
+}
+
+//  手機尺寸
+@mixin phone() {
+  @media (max-width: $phone-media) {
+    @content;
+  }
+}

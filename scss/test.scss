@@ -1,0 +1,62 @@
+@import "reset";
+@import "color";
+@import "grid";
+/* news */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: 30%;
+      padding: 0px 1% 16px;
+      @include pad {
+        width: 48%;
+      }
+      @include phone {
+        width: 98%;
+      }
+      h2 {
+        font-size: 24px;
+        @include pad {
+          font-size: 20px;
+        }
+        @include phone {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: 30%;
+      padding: 0px 2% 20px;
+      @include pad {
+        width: 48%;
+      }
+      @include phone {
+        width: 98%;
+      }
+      .photo {
+        display: flex;
+        height: 400px;
+        justify-content: center;
+      }
+      h3 {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

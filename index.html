@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/all.css" />
+  </head>
+
+  <body>
+    <div class="section1">
+      <div class="container main">
+        <h1><a href="#">BMI Calculator</a></h1>
+
+        <fieldset>
+          <div class="c-ht d-flex-col">
+            <label for="height">身高 cm</label>
+            <input
+              type="number"
+              name="height"
+              id="height"
+              placeholder="請輸入身高"
+            />
+          </div>
+
+          <div class="c-wt d-flex-col">
+            <label for="weight">體重 kg</label>
+            <input
+              type="number"
+              name="weight"
+              id="weight"
+              placeholder="請輸入體重"
+            />
+          </div>
+        </fieldset>
+
+        <a class="chkBtn" href="#"
+          >看結果
+          <div class="icon"><img src="images/icons_loop.png" alt="" /></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section2">
+      <div class="container">
+        <h2 class="title">BMI紀錄</h2>
+        <p class="note">尚無紀錄</p>
+        <ul class="list">
+          <!-- <li class="d-flex-list ">
+            <div class="box"></div>
+            <h3>理想</h3>
+            <h4 class="bmi-num">BMI<span>20.90</span></h4>
+            <h4 class="wei-num">weight <span>70KG</span></h4>
+            <h4 class="hei-num">height <span>180CM</span></h4>
+            <div class="date">2021-03-10</div>
+          </li> -->
+        </ul>
+        <div class="clear"><button>清除資料</button></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container d-flex-img">
+        <img src="images/BMISLogo.png" alt="logo" />
+      </div>
+    </div>
+
+    <script src="js/my2.js"></script>
+  </body>
+</html>
